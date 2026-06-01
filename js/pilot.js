@@ -12,11 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const consent = document.getElementById('consent').checked;
 
     if (!name || !country || !role || !contact || !consent) {
-      alert('Пожалуйста, заполните все обязательные поля.');
+      alert('Please fill in all required fields.');
       return;
     }
 
-    // Save to localStorage
     const entry = {
       name, country, role, contact,
       comment: document.getElementById('comment').value.trim(),
@@ -28,12 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
       localStorage.setItem('sco_pilot_leads', JSON.stringify(existing));
     } catch (err) { /* ignore */ }
 
-    // Show success message inline
     form.innerHTML = `
       <div class="success-inline success-inline--lg">
         <div class="success-icon">✅</div>
-        <h3>Заявка принята!</h3>
-        <p>Спасибо, ${name}! Мы свяжемся с вами при запуске пилотной версии платформы.</p>
+        <h3>Application received!</h3>
+        <p>Thank you, ${name}! We will reach out when the pilot version of the platform launches.</p>
       </div>
     `;
   });

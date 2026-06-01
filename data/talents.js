@@ -1,146 +1,146 @@
-// Static demo data — talents
+// Static demo data — talents (English)
 const TALENTS = [
   {
     id: 'alina-karimova',
     slug: 'alina-karimova',
-    fullName: 'Алина Каримова',
-    country: 'Казахстан',
-    city: 'Алматы',
-    specialization: 'Международное право и молодёжная политика',
-    shortBio: 'Аналитик по международному праву с опытом участия в программах ШОС. Специализируюсь на правовом регулировании молодёжного сотрудничества и подготовке грантовых заявок.',
-    education: 'Казахский национальный университет им. аль-Фараби, Юридический факультет, магистр международного права (2024)',
+    fullName: 'Alina Karimova',
+    country: 'Kazakhstan',
+    city: 'Almaty',
+    specialization: 'International Law & Youth Policy',
+    shortBio: 'International law analyst with experience in SCO programmes. Specialises in the legal regulation of youth cooperation and grant application preparation.',
+    education: 'Al-Farabi Kazakh National University, Faculty of Law, Master of International Law (2024)',
     programs: [
-      'Молодёжный форум ШОС 2023',
-      'Школа международного права ШОС 2022',
-      'Программа молодых лидеров ЦА 2021'
+      'SCO Youth Forum 2023',
+      'SCO School of International Law 2022',
+      'Central Asia Young Leaders Programme 2021'
     ],
-    skills: ['международное право', 'аналитика', 'подготовка заявок', 'исследовательская работа', 'публичные выступления'],
-    languages: ['русский (родной)', 'казахский (родной)', 'английский (C1)', 'французский (A2)'],
-    desiredRoles: ['Аналитик', 'Юрист-международник', 'Координатор проекта'],
+    skills: ['international law', 'analytics', 'grant writing', 'research', 'public speaking'],
+    languages: ['Russian (native)', 'Kazakh (native)', 'English (C1)', 'French (A2)'],
+    desiredRoles: ['Analyst', 'International Lawyer', 'Project Coordinator'],
     projectExperience: [
-      'Участие в разработке рекомендаций по молодёжной политике ШОС (2023)',
-      'Подготовка аналитического обзора для Молодёжного совета ШОС (2022)'
+      'Contributed to SCO youth policy recommendations (2023)',
+      'Prepared an analytical review for the SCO Youth Council (2022)'
     ],
-    availability: 'Онлайн, готова к участию в международных командах',
-    format: 'онлайн'
+    availability: 'Online — ready to join international teams',
+    format: 'online'
   },
   {
     id: 'ivan-petrov',
     slug: 'ivan-petrov',
-    fullName: 'Иван Петров',
-    country: 'Россия',
-    city: 'Москва',
-    specialization: 'IT-разработка и цифровые платформы',
-    shortBio: 'Full-stack разработчик с интересом к международным проектам и цифровым сервисам для молодёжи. Участвовал в хакатонах и проектах в сфере EdTech.',
-    education: 'МГТУ им. Баумана, Факультет информатики и систем управления, бакалавр (2023)',
+    fullName: 'Ivan Petrov',
+    country: 'Russia',
+    city: 'Moscow',
+    specialization: 'IT Development & Digital Platforms',
+    shortBio: 'Full-stack developer with an interest in international projects and digital services for youth. Has participated in hackathons and EdTech projects.',
+    education: 'Bauman Moscow State Technical University, Faculty of Informatics and Control Systems, Bachelor (2023)',
     programs: [
-      'Хакатон ШОС Digital 2023',
-      'Программа цифровых инноваций БРИКС 2022'
+      'SCO Digital Hackathon 2023',
+      'BRICS Digital Innovation Programme 2022'
     ],
-    skills: ['веб-разработка', 'базы данных', 'автоматизация', 'аналитика данных', 'React', 'Python'],
-    languages: ['русский (родной)', 'английский (B2)'],
-    desiredRoles: ['IT-разработчик', 'Технический лид', 'Аналитик данных'],
+    skills: ['web development', 'databases', 'automation', 'data analytics', 'React', 'Python'],
+    languages: ['Russian (native)', 'English (B2)'],
+    desiredRoles: ['IT Developer', 'Technical Lead', 'Data Analyst'],
     projectExperience: [
-      'Разработка платформы для студенческих обменов (2023)',
-      'Создание дашборда для анализа данных молодёжных программ (2022)'
+      'Developed a platform for student exchanges (2023)',
+      'Built a dashboard for youth programme data analysis (2022)'
     ],
-    availability: 'Онлайн, частичная занятость',
-    format: 'онлайн'
+    availability: 'Online — part-time availability',
+    format: 'online'
   },
   {
     id: 'mei-lin',
     slug: 'mei-lin',
-    fullName: 'Мэй Лин',
-    country: 'Китай',
-    city: 'Шанхай',
-    specialization: 'Перевод и международные коммуникации',
-    shortBio: 'Переводчик и координатор международных коммуникаций. Специализируюсь на русско-китайском переводе и организации международных мероприятий в рамках ШОС.',
-    education: 'Шанхайский университет иностранных языков, Факультет русского языка, магистр (2024)',
+    fullName: 'Mei Lin',
+    country: 'China',
+    city: 'Shanghai',
+    specialization: 'Translation & International Communications',
+    shortBio: 'Translator and international communications coordinator. Specialises in Russian–Chinese translation and organising international events within the SCO framework.',
+    education: 'Shanghai International Studies University, Faculty of Russian Language, Master (2024)',
     programs: [
-      'Молодёжный форум ШОС 2023',
-      'Программа культурного обмена Россия-Китай 2022',
-      'Летняя школа ШОС в Москве 2021'
+      'SCO Youth Forum 2023',
+      'Russia–China Cultural Exchange Programme 2022',
+      'SCO Summer School in Moscow 2021'
     ],
-    skills: ['перевод', 'межкультурная коммуникация', 'организация мероприятий', 'синхронный перевод', 'PR'],
-    languages: ['китайский (родной)', 'русский (C1)', 'английский (B2)'],
-    desiredRoles: ['Переводчик', 'Координатор коммуникаций', 'Организатор мероприятий'],
+    skills: ['translation', 'intercultural communication', 'event organisation', 'simultaneous interpretation', 'PR'],
+    languages: ['Chinese (native)', 'Russian (C1)', 'English (B2)'],
+    desiredRoles: ['Translator', 'Communications Coordinator', 'Event Organiser'],
     projectExperience: [
-      'Синхронный перевод на Молодёжном форуме ШОС 2023',
-      'Координация российско-китайского студенческого обмена (2022)'
+      'Simultaneous interpretation at the SCO Youth Forum 2023',
+      'Coordinated a Russian–Chinese student exchange programme (2022)'
     ],
-    availability: 'Онлайн и офлайн (Шанхай / Москва)',
-    format: 'смешанный'
+    availability: 'Online and offline (Shanghai / Moscow)',
+    format: 'hybrid'
   },
   {
     id: 'sardor-rahimov',
     slug: 'sardor-rahimov',
-    fullName: 'Сардор Рахимов',
-    country: 'Узбекистан',
-    city: 'Ташкент',
-    specialization: 'Управление проектами и грантовая деятельность',
-    shortBio: 'Проектный менеджер с опытом работы в международных молодёжных организациях. Специализируюсь на подготовке грантовых заявок и управлении командами.',
-    education: 'Университет мировой экономики и дипломатии (Ташкент), Международные отношения, бакалавр (2022)',
+    fullName: 'Sardor Rahimov',
+    country: 'Uzbekistan',
+    city: 'Tashkent',
+    specialization: 'Project Management & Grant Development',
+    shortBio: 'Project manager with experience in international youth organisations. Specialises in grant application preparation and team management.',
+    education: 'University of World Economy and Diplomacy (Tashkent), International Relations, Bachelor (2022)',
     programs: [
-      'Молодёжный совет ШОС 2022–2023',
-      'Программа молодых лидеров ООН 2022',
-      'Форум молодёжи Центральной Азии 2021'
+      'SCO Youth Council 2022–2023',
+      'UN Young Leaders Programme 2022',
+      'Central Asia Youth Forum 2021'
     ],
-    skills: ['управление проектами', 'работа с грантами', 'организация команд', 'стратегическое планирование', 'фандрайзинг'],
-    languages: ['узбекский (родной)', 'русский (C1)', 'английский (B2)', 'таджикский (A2)'],
-    desiredRoles: ['Проектный менеджер', 'Координатор', 'Специалист по грантам'],
+    skills: ['project management', 'grant writing', 'team building', 'strategic planning', 'fundraising'],
+    languages: ['Uzbek (native)', 'Russian (C1)', 'English (B2)', 'Tajik (A2)'],
+    desiredRoles: ['Project Manager', 'Coordinator', 'Grants Specialist'],
     projectExperience: [
-      'Руководство молодёжным проектом по устойчивому развитию (грант ПРООН, 2022)',
-      'Координация регионального форума молодёжи ЦА (2021)'
+      'Led a youth sustainable development project (UNDP grant, 2022)',
+      'Coordinated a regional Central Asia youth forum (2021)'
     ],
-    availability: 'Онлайн, полная занятость',
-    format: 'онлайн'
+    availability: 'Online — full-time availability',
+    format: 'online'
   },
   {
     id: 'diana-temirova',
     slug: 'diana-temirova',
-    fullName: 'Диана Темирова',
-    country: 'Кыргызстан',
-    city: 'Бишкек',
-    specialization: 'Медиа, SMM и PR',
-    shortBio: 'Медиаспециалист с опытом продвижения международных молодёжных инициатив. Создаю контент, который рассказывает истории молодёжного сотрудничества ШОС.',
-    education: 'Кыргызско-Российский Славянский университет, Журналистика, бакалавр (2023)',
+    fullName: 'Diana Temirova',
+    country: 'Kyrgyzstan',
+    city: 'Bishkek',
+    specialization: 'Media, SMM & PR',
+    shortBio: 'Media specialist with experience promoting international youth initiatives. Creates content that tells the stories of SCO youth cooperation.',
+    education: 'Kyrgyz-Russian Slavic University, Journalism, Bachelor (2023)',
     programs: [
-      'Медиашкола ШОС 2023',
-      'Молодёжный форум ШОС 2022',
-      'Программа молодых журналистов СНГ 2021'
+      'SCO Media School 2023',
+      'SCO Youth Forum 2022',
+      'CIS Young Journalists Programme 2021'
     ],
-    skills: ['SMM', 'дизайн', 'PR', 'подготовка презентаций', 'видеопроизводство', 'копирайтинг'],
-    languages: ['русский (родной)', 'кыргызский (родной)', 'английский (B1)'],
-    desiredRoles: ['Медиаспециалист', 'SMM-менеджер', 'PR-специалист', 'Дизайнер'],
+    skills: ['SMM', 'design', 'PR', 'presentation design', 'video production', 'copywriting'],
+    languages: ['Russian (native)', 'Kyrgyz (native)', 'English (B1)'],
+    desiredRoles: ['Media Specialist', 'SMM Manager', 'PR Specialist', 'Designer'],
     projectExperience: [
-      'SMM-продвижение Молодёжного форума ШОС 2022 (охват 50 000+)',
-      'Создание медиаконтента для программы молодых журналистов СНГ (2021)'
+      'SMM promotion of the SCO Youth Forum 2022 (50,000+ reach)',
+      'Created media content for the CIS Young Journalists Programme (2021)'
     ],
-    availability: 'Онлайн, частичная занятость',
-    format: 'онлайн'
+    availability: 'Online — part-time availability',
+    format: 'online'
   },
   {
     id: 'arman-nuriev',
     slug: 'arman-nuriev',
-    fullName: 'Арман Нуриев',
-    country: 'Беларусь',
-    city: 'Минск',
-    specialization: 'Экономический анализ и исследования',
-    shortBio: 'Исследователь-экономист, специализирующийся на интеграционных процессах в пространстве ШОС. Опыт подготовки аналитических отчётов для международных организаций.',
-    education: 'Белорусский государственный университет, Экономический факультет, магистр (2024)',
+    fullName: 'Arman Nuriev',
+    country: 'Belarus',
+    city: 'Minsk',
+    specialization: 'Economic Research & Analysis',
+    shortBio: 'Research economist specialising in integration processes within the SCO space. Experience preparing analytical reports for international organisations.',
+    education: 'Belarusian State University, Faculty of Economics, Master (2024)',
     programs: [
-      'Экономический форум ШОС 2023',
-      'Программа молодых исследователей ЕАЭС 2022',
-      'Летняя школа международной экономики 2021'
+      'SCO Economic Forum 2023',
+      'EAEU Young Researchers Programme 2022',
+      'International Economics Summer School 2021'
     ],
-    skills: ['экономический анализ', 'работа с данными', 'подготовка отчётов', 'эконометрика', 'исследовательская работа'],
-    languages: ['русский (родной)', 'белорусский (родной)', 'английский (C1)', 'польский (B1)'],
-    desiredRoles: ['Аналитик', 'Исследователь', 'Экономист'],
+    skills: ['economic analysis', 'data work', 'report writing', 'econometrics', 'research'],
+    languages: ['Russian (native)', 'Belarusian (native)', 'English (C1)', 'Polish (B1)'],
+    desiredRoles: ['Analyst', 'Researcher', 'Economist'],
     projectExperience: [
-      'Подготовка аналитического обзора торгово-экономического сотрудничества стран ШОС (2023)',
-      'Участие в исследовании интеграционных процессов ЕАЭС (2022)'
+      'Prepared an analytical review of SCO trade and economic cooperation (2023)',
+      'Participated in a study of EAEU integration processes (2022)'
     ],
-    availability: 'Онлайн, готов к участию в международных командах',
-    format: 'онлайн'
+    availability: 'Online — ready to join international teams',
+    format: 'online'
   }
 ];

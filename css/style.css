@@ -54,8 +54,12 @@ ul { list-style: none; }
   box-shadow: 0 1px 8px rgba(0,0,0,0.06);
 }
 .header__inner { display: flex; align-items: center; gap: 24px; height: 64px; }
-.logo { font-size: 1.1rem; font-weight: 700; color: var(--primary); flex-shrink: 0; text-decoration: none; }
+.logo { display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: 700; color: var(--primary); flex-shrink: 0; text-decoration: none; }
 .logo:hover { text-decoration: none; }
+.logo__img { height: 36px; width: auto; display: block; flex-shrink: 0; }
+.logo__img--sm { height: 28px; }
+.logo__text { white-space: nowrap; }
+.logo--footer { color: var(--white); }
 .nav { display: flex; gap: 4px; flex: 1; }
 .nav__link { padding: 6px 12px; border-radius: 6px; color: var(--gray-700); font-size: 0.9rem; font-weight: 500; transition: background 0.15s; }
 .nav__link:hover, .nav__link--active { background: var(--primary-light); color: var(--primary); text-decoration: none; }

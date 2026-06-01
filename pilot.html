@@ -1,90 +1,96 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Пилотный запуск — SCO Youth Talent Hub</title>
+  <title>Pilot Launch — SCO Youth Talent Hub</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="logo">SCO Youth Talent Hub</a>
+      <a href="index.html" class="logo">
+        <img src="public/SCO_logo.svg" alt="SCO Logo" class="logo__img" />
+        <span class="logo__text">SCO Youth Talent Hub</span>
+      </a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav__link">Главная</a>
-        <a href="projects.html" class="nav__link">Проекты</a>
-        <a href="talents.html" class="nav__link">Специалисты</a>
-        <a href="about.html" class="nav__link">О платформе</a>
-        <a href="pilot.html" class="nav__link nav__link--active">Пилотный запуск</a>
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="projects.html" class="nav__link">Projects</a>
+        <a href="talents.html" class="nav__link">Specialists</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="pilot.html" class="nav__link nav__link--active">Pilot Launch</a>
       </nav>
-      <button class="burger" id="burger" aria-label="Меню">&#9776;</button>
+      <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
     </div>
   </header>
 
   <div class="page-header">
     <div class="container">
-      <h1 class="page-header__title">Пилотный запуск</h1>
-      <p class="page-header__sub">Стань одним из первых участников платформы</p>
+      <h1 class="page-header__title">Pilot Launch</h1>
+      <p class="page-header__sub">Be among the first participants on the platform</p>
     </div>
   </div>
 
   <div class="container form-page">
     <div class="pilot-info">
-      <p>Платформа SCO Youth Talent Hub находится на стадии демонстрационного прототипа. Мы собираем контакты людей, которым интересна идея, чтобы пригласить их в пилотный запуск.</p>
-      <p>Оставьте заявку — и мы свяжемся с вами при запуске полноценной версии.</p>
+      <p>SCO Youth Talent Hub is currently at the demonstration prototype stage. We are collecting contacts from people interested in the idea to invite them to the pilot launch.</p>
+      <p>Submit your interest — and we will reach out when the full version is ready.</p>
     </div>
 
     <div class="form-card">
-      <h2 class="form-card__title">Хочу участвовать в пилотном запуске</h2>
+      <h2 class="form-card__title">I want to join the pilot launch</h2>
 
       <form id="pilot-form" class="form" novalidate>
         <div class="form-group">
-          <label class="form-label" for="name">Имя и фамилия *</label>
-          <input class="form-input" type="text" id="name" name="name" placeholder="Иван Петров" required />
+          <label class="form-label" for="name">Full Name *</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Ivan Petrov" required />
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="country">Страна *</label>
-          <input class="form-input" type="text" id="country" name="country" placeholder="Россия" required />
+          <label class="form-label" for="country">Country *</label>
+          <input class="form-input" type="text" id="country" name="country" placeholder="Russia" required />
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="role">Роль *</label>
+          <label class="form-label" for="role">Role *</label>
           <select class="form-input" id="role" name="role" required>
-            <option value="">Выберите роль</option>
-            <option value="Специалист">Специалист / молодой профессионал</option>
-            <option value="Лидер проекта">Лидер проекта</option>
-            <option value="Организация">Представитель организации</option>
-            <option value="Эксперт">Эксперт / наставник</option>
-            <option value="Партнёр">Потенциальный партнёр</option>
+            <option value="">Select a role</option>
+            <option value="Specialist">Specialist / Young Professional</option>
+            <option value="Project Leader">Project Leader</option>
+            <option value="Organisation">Organisation Representative</option>
+            <option value="Expert">Expert / Mentor</option>
+            <option value="Partner">Potential Partner</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="contact">Email или Telegram *</label>
-          <input class="form-input" type="text" id="contact" name="contact" placeholder="email@mail.com или @username" required />
+          <label class="form-label" for="contact">Email or Telegram *</label>
+          <input class="form-input" type="text" id="contact" name="contact" placeholder="email@mail.com or @username" required />
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="comment">Чем интересна платформа?</label>
+          <label class="form-label" for="comment">What interests you about the platform?</label>
           <textarea class="form-input form-textarea" id="comment" name="comment" rows="3"
-            placeholder="Расскажите, как вы могли бы использовать платформу"></textarea>
+            placeholder="Tell us how you would use the platform"></textarea>
         </div>
 
         <div class="form-group form-group--check">
           <input type="checkbox" id="consent" name="consent" required />
-          <label for="consent">Я согласен(а) на обработку персональных данных и получение информации о запуске платформы</label>
+          <label for="consent">I consent to the processing of my personal data and to receiving information about the platform launch</label>
         </div>
 
-        <button type="submit" class="btn btn--primary btn--lg btn--full">Отправить заявку</button>
+        <button type="submit" class="btn btn--primary btn--lg btn--full">Submit Interest</button>
       </form>
     </div>
   </div>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span class="logo">SCO Youth Talent Hub</span>
-      <p class="footer__note">Демонстрационный прототип. Данные являются тестовыми.</p>
+      <a href="index.html" class="logo logo--footer">
+        <img src="public/SCO_logo.svg" alt="SCO Logo" class="logo__img logo__img--sm" />
+        <span class="logo__text">SCO Youth Talent Hub</span>
+      </a>
+      <p class="footer__note">Demonstration prototype. All data is fictional.</p>
     </div>
   </footer>
 

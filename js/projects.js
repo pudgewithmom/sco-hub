@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function render() {
     const filtered = getFiltered();
-    meta.textContent = `Найдено проектов: ${filtered.length}`;
+    meta.textContent = `Projects found: ${filtered.length}`;
     list.innerHTML = filtered.length
       ? filtered.map(p => buildProjectCard(p, '')).join('')
-      : '<p class="empty-state">По выбранным фильтрам проектов не найдено.</p>';
+      : '<p class="empty-state">No projects match the selected filters.</p>';
   }
 
   [selCategory, selStage, selFormat].forEach(el => el.addEventListener('change', render));

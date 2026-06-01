@@ -1,43 +1,46 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Откликнуться на проект — SCO Youth Talent Hub</title>
+  <title>Apply for a Project — SCO Youth Talent Hub</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="logo">SCO Youth Talent Hub</a>
+      <a href="index.html" class="logo">
+        <img src="public/SCO_logo.svg" alt="SCO Logo" class="logo__img" />
+        <span class="logo__text">SCO Youth Talent Hub</span>
+      </a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav__link">Главная</a>
-        <a href="projects.html" class="nav__link">Проекты</a>
-        <a href="talents.html" class="nav__link">Специалисты</a>
-        <a href="about.html" class="nav__link">О платформе</a>
-        <a href="pilot.html" class="nav__link">Пилотный запуск</a>
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="projects.html" class="nav__link">Projects</a>
+        <a href="talents.html" class="nav__link">Specialists</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="pilot.html" class="nav__link">Pilot Launch</a>
       </nav>
-      <button class="burger" id="burger" aria-label="Меню">&#9776;</button>
+      <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
     </div>
   </header>
 
   <div class="page-header">
     <div class="container">
-      <h1 class="page-header__title">Отклик на проект</h1>
-      <p class="page-header__sub" id="apply-project-name">Загрузка...</p>
+      <h1 class="page-header__title">Apply for a Project</h1>
+      <p class="page-header__sub" id="apply-project-name">Loading...</p>
     </div>
   </div>
 
   <div class="container form-page">
     <div class="form-card">
       <p class="form-demo-note">
-        ⚠️ Это демонстрационный сценарий. В полноценной версии отклики будут отображаться в личном кабинете лидера проекта.
+        ⚠️ This is a demonstration scenario. In the full version, applications will appear in the project leader's dashboard.
       </p>
 
       <form id="apply-form" class="form" novalidate>
         <div class="form-group">
-          <label class="form-label" for="name">Имя и фамилия *</label>
-          <input class="form-input" type="text" id="name" name="name" placeholder="Алина Каримова" required />
+          <label class="form-label" for="name">Full Name *</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Alina Karimova" required />
         </div>
 
         <div class="form-group">
@@ -51,40 +54,43 @@
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="role">Роль, на которую претендуете *</label>
+          <label class="form-label" for="role">Role you are applying for *</label>
           <select class="form-input" id="role" name="role" required>
-            <option value="">Выберите роль</option>
-            <option value="Аналитик">Аналитик</option>
-            <option value="Юрист-международник">Юрист-международник</option>
-            <option value="Переводчик">Переводчик</option>
-            <option value="IT-разработчик">IT-разработчик</option>
-            <option value="Дизайнер">Дизайнер</option>
-            <option value="Медиаспециалист">Медиаспециалист</option>
-            <option value="Проектный координатор">Проектный координатор</option>
-            <option value="Исследователь">Исследователь</option>
+            <option value="">Select a role</option>
+            <option value="Analyst">Analyst</option>
+            <option value="International Lawyer">International Lawyer</option>
+            <option value="Translator">Translator</option>
+            <option value="IT Developer">IT Developer</option>
+            <option value="Designer">Designer</option>
+            <option value="Media Specialist">Media Specialist</option>
+            <option value="Project Coordinator">Project Coordinator</option>
+            <option value="Researcher">Researcher</option>
           </select>
         </div>
 
         <div class="form-group">
-          <label class="form-label" for="message">Мотивационное сообщение *</label>
+          <label class="form-label" for="message">Motivation Message *</label>
           <textarea class="form-input form-textarea" id="message" name="message" rows="4"
-            placeholder="Расскажите, почему вас интересует этот проект и что вы можете привнести в команду" required></textarea>
+            placeholder="Tell us why you are interested in this project and what you can bring to the team" required></textarea>
         </div>
 
         <div class="form-group form-group--check">
           <input type="checkbox" id="consent" name="consent" required />
-          <label for="consent">Я согласен(а) на обработку персональных данных в рамках демонстрационного прототипа</label>
+          <label for="consent">I consent to the processing of my personal data within this demonstration prototype</label>
         </div>
 
-        <button type="submit" class="btn btn--primary btn--lg btn--full">Отправить отклик</button>
+        <button type="submit" class="btn btn--primary btn--lg btn--full">Submit Application</button>
       </form>
     </div>
   </div>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span class="logo">SCO Youth Talent Hub</span>
-      <p class="footer__note">Демонстрационный прототип. Данные являются тестовыми.</p>
+      <a href="index.html" class="logo logo--footer">
+        <img src="public/SCO_logo.svg" alt="SCO Logo" class="logo__img logo__img--sm" />
+        <span class="logo__text">SCO Youth Talent Hub</span>
+      </a>
+      <p class="footer__note">Demonstration prototype. All data is fictional.</p>
     </div>
   </footer>
 

@@ -1,86 +1,90 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Проекты — SCO Youth Talent Hub</title>
+  <title>Projects — SCO Youth Talent Hub</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="header">
     <div class="container header__inner">
-      <a href="index.html" class="logo">SCO Youth Talent Hub</a>
+      <a href="index.html" class="logo">
+        <img src="public/SCO_logo.svg" alt="SCO Logo" class="logo__img" />
+        <span class="logo__text">SCO Youth Talent Hub</span>
+      </a>
       <nav class="nav" id="nav">
-        <a href="index.html" class="nav__link">Главная</a>
-        <a href="projects.html" class="nav__link nav__link--active">Проекты</a>
-        <a href="talents.html" class="nav__link">Специалисты</a>
-        <a href="about.html" class="nav__link">О платформе</a>
-        <a href="pilot.html" class="nav__link">Пилотный запуск</a>
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="projects.html" class="nav__link nav__link--active">Projects</a>
+        <a href="talents.html" class="nav__link">Specialists</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="pilot.html" class="nav__link">Pilot Launch</a>
       </nav>
       <div class="header__actions">
-        <a href="pilot.html" class="btn btn--primary">Разместить проект</a>
+        <a href="pilot.html" class="btn btn--primary">Post a Project</a>
       </div>
-      <button class="burger" id="burger" aria-label="Меню">&#9776;</button>
+      <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
     </div>
   </header>
 
   <div class="page-header">
     <div class="container">
-      <h1 class="page-header__title">Проектные инициативы</h1>
-      <p class="page-header__sub">Найди проект, в котором можешь применить свои компетенции</p>
+      <h1 class="page-header__title">Project Initiatives</h1>
+      <p class="page-header__sub">Find a project where you can apply your expertise</p>
     </div>
   </div>
 
   <div class="container catalog-layout">
-    <!-- Filters -->
     <aside class="filters" id="filters">
-      <h3 class="filters__title">Фильтры</h3>
+      <h3 class="filters__title">Filters</h3>
 
       <div class="filter-group">
-        <label class="filter-label">Сфера проекта</label>
+        <label class="filter-label">Field</label>
         <select class="filter-select" id="filter-category">
-          <option value="">Все сферы</option>
-          <option value="международное право">Международное право</option>
-          <option value="цифровизация">Цифровизация</option>
-          <option value="образование">Образование</option>
-          <option value="медиа">Медиа</option>
+          <option value="">All fields</option>
+          <option value="international law">International Law</option>
+          <option value="digitalisation">Digitalisation</option>
+          <option value="education">Education</option>
+          <option value="media">Media</option>
         </select>
       </div>
 
       <div class="filter-group">
-        <label class="filter-label">Стадия</label>
+        <label class="filter-label">Stage</label>
         <select class="filter-select" id="filter-stage">
-          <option value="">Все стадии</option>
-          <option value="поиск команды">Поиск команды</option>
-          <option value="идея">Идея</option>
-          <option value="подготовка заявки">Подготовка заявки</option>
+          <option value="">All stages</option>
+          <option value="team search">Team Search</option>
+          <option value="idea">Idea</option>
+          <option value="application preparation">Application Preparation</option>
         </select>
       </div>
 
       <div class="filter-group">
-        <label class="filter-label">Формат</label>
+        <label class="filter-label">Format</label>
         <select class="filter-select" id="filter-format">
-          <option value="">Любой формат</option>
-          <option value="онлайн">Онлайн</option>
-          <option value="офлайн">Офлайн</option>
-          <option value="смешанный">Смешанный</option>
+          <option value="">Any format</option>
+          <option value="online">Online</option>
+          <option value="offline">Offline</option>
+          <option value="hybrid">Hybrid</option>
         </select>
       </div>
 
-      <button class="btn btn--outline btn--full" id="reset-filters">Сбросить фильтры</button>
+      <button class="btn btn--outline btn--full" id="reset-filters">Reset Filters</button>
     </aside>
 
-    <!-- Cards -->
     <main class="catalog-main">
-      <div class="catalog-meta" id="catalog-meta">Загрузка...</div>
+      <div class="catalog-meta" id="catalog-meta">Loading...</div>
       <div class="cards cards--list" id="projects-list"><!-- JS --></div>
     </main>
   </div>
 
   <footer class="footer">
     <div class="container footer__inner">
-      <span class="logo">SCO Youth Talent Hub</span>
-      <p class="footer__note">Демонстрационный прототип. Данные являются тестовыми.</p>
+      <a href="index.html" class="logo logo--footer">
+        <img src="public/SCO_logo.svg" alt="SCO Logo" class="logo__img logo__img--sm" />
+        <span class="logo__text">SCO Youth Talent Hub</span>
+      </a>
+      <p class="footer__note">Demonstration prototype. All data is fictional.</p>
     </div>
   </footer>
 

@@ -8,12 +8,12 @@ function tagList(items) {
 
 function stageBadge(stage) {
   const map = {
-    'поиск команды': 'badge--blue',
-    'идея': 'badge--gray',
-    'подготовка заявки': 'badge--orange',
-    'заявка подана': 'badge--green',
-    'проект в реализации': 'badge--teal',
-    'проект завершен': 'badge--dark'
+    'team search':              'badge--blue',
+    'idea':                     'badge--gray',
+    'application preparation':  'badge--orange',
+    'application submitted':    'badge--green',
+    'project in progress':      'badge--teal',
+    'project completed':        'badge--dark'
   };
   const cls = map[stage] || 'badge--gray';
   return `<span class="badge ${cls}">${stage}</span>`;
@@ -30,13 +30,13 @@ function buildProjectCard(p, basePath) {
       <p class="card__desc">${p.shortDescription}</p>
       <div class="card__meta">
         <span class="card__meta-item">🌍 ${p.countryScope}</span>
-        <span class="card__meta-item">📅 до ${p.deadline}</span>
-        <span class="card__meta-item">👥 ${p.openSlots} мест</span>
+        <span class="card__meta-item">📅 by ${p.deadline}</span>
+        <span class="card__meta-item">👥 ${p.openSlots} open slots</span>
       </div>
       <div class="card__tags">${tagList(p.requiredRoles.slice(0, 3))}</div>
       <div class="card__actions">
-        <a href="${basePath}projects/${p.slug}.html" class="btn btn--outline btn--sm">Открыть проект</a>
-        <a href="${basePath}apply.html?project=${p.slug}" class="btn btn--primary btn--sm">Откликнуться</a>
+        <a href="${basePath}projects/${p.slug}.html" class="btn btn--outline btn--sm">View Project</a>
+        <a href="${basePath}apply.html?project=${p.slug}" class="btn btn--primary btn--sm">Apply</a>
       </div>
     </article>
   `;
@@ -57,8 +57,8 @@ function buildTalentCard(t, basePath) {
       <div class="card__tags">${tagList(t.skills.slice(0, 3))}</div>
       <div class="card__langs">🗣 ${t.languages.slice(0, 2).join(' · ')}</div>
       <div class="card__actions">
-        <a href="${basePath}talents/${t.slug}.html" class="btn btn--outline btn--sm">Открыть профиль</a>
-        <a href="${basePath}talents/${t.slug}.html#invite" class="btn btn--primary btn--sm">Пригласить</a>
+        <a href="${basePath}talents/${t.slug}.html" class="btn btn--outline btn--sm">View Profile</a>
+        <a href="${basePath}talents/${t.slug}.html#invite" class="btn btn--primary btn--sm">Invite</a>
       </div>
     </article>
   `;

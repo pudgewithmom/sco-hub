@@ -5,7 +5,7 @@ function renderTalentDetail(slug, basePath) {
 
   const talent = TALENTS.find(t => t.slug === slug);
   if (!talent) {
-    container.innerHTML = '<p class="empty-state">Профиль не найден.</p>';
+    container.innerHTML = '<p class="empty-state">Profile not found.</p>';
     return;
   }
 
@@ -13,7 +13,7 @@ function renderTalentDetail(slug, basePath) {
 
   container.innerHTML = `
     <nav class="breadcrumb">
-      <a href="${basePath}talents.html">← Все специалисты</a>
+      <a href="${basePath}talents.html">← All Specialists</a>
     </nav>
 
     <div class="detail-layout">
@@ -24,78 +24,78 @@ function renderTalentDetail(slug, basePath) {
             <h1 class="detail-title">${talent.fullName}</h1>
             <p class="talent-location">📍 ${talent.city}, ${talent.country}</p>
             <p class="talent-spec">${talent.specialization}</p>
-            <span class="badge badge--green">Готов к участию в проектах</span>
+            <span class="badge badge--green">Available for projects</span>
           </div>
         </div>
 
         <section class="detail-section">
-          <h2>О себе</h2>
+          <h2>About</h2>
           <p>${talent.shortBio}</p>
         </section>
 
         <section class="detail-section">
-          <h2>Образование</h2>
+          <h2>Education</h2>
           <p>${talent.education}</p>
         </section>
 
         <section class="detail-section">
-          <h2>Программы и мероприятия ШОС</h2>
+          <h2>SCO Programmes &amp; Events</h2>
           <ul class="simple-list">
             ${talent.programs.map(p => `<li>${p}</li>`).join('')}
           </ul>
         </section>
 
         <section class="detail-section">
-          <h2>Компетенции</h2>
+          <h2>Skills</h2>
           <div class="tags-block">${tagList(talent.skills)}</div>
         </section>
 
         <section class="detail-section">
-          <h2>Языки</h2>
+          <h2>Languages</h2>
           <div class="tags-block">${tagList(talent.languages)}</div>
         </section>
 
         <section class="detail-section">
-          <h2>Проектный опыт</h2>
+          <h2>Project Experience</h2>
           <ul class="simple-list">
             ${talent.projectExperience.map(e => `<li>${e}</li>`).join('')}
           </ul>
         </section>
 
         <section class="detail-section">
-          <h2>Желаемые роли в проектах</h2>
+          <h2>Desired Roles in Projects</h2>
           <div class="tags-block">${tagList(talent.desiredRoles)}</div>
         </section>
 
         <section class="detail-section">
-          <h2>Формат участия</h2>
+          <h2>Participation Format</h2>
           <p>${talent.availability}</p>
         </section>
 
         <div class="detail-apply" id="invite">
-          <button class="btn btn--primary btn--lg" id="open-invite-modal">Пригласить в проект</button>
+          <button class="btn btn--primary btn--lg" id="open-invite-modal">Invite to a Project</button>
         </div>
       </main>
 
       <aside class="detail-sidebar">
         <div class="sidebar-card">
-          <h3>Информация</h3>
+          <h3>Details</h3>
           <dl class="detail-list">
-            <dt>Страна</dt><dd>${talent.country}</dd>
-            <dt>Город</dt><dd>${talent.city}</dd>
-            <dt>Формат</dt><dd>${talent.format}</dd>
-            <dt>Специализация</dt><dd>${talent.specialization}</dd>
+            <dt>Country</dt><dd>${talent.country}</dd>
+            <dt>City</dt><dd>${talent.city}</dd>
+            <dt>Format</dt><dd>${talent.format}</dd>
+            <dt>Specialisation</dt><dd>${talent.specialization}</dd>
           </dl>
         </div>
 
         <div class="sidebar-card">
-          <h3>Желаемые роли</h3>
+          <h3>Desired Roles</h3>
           <div class="tags-block">${tagList(talent.desiredRoles)}</div>
         </div>
 
         <div class="sidebar-card sidebar-card--cta">
-          <p>Хотите пригласить ${talent.fullName.split(' ')[0]} в свой проект?</p>
-          <button class="btn btn--primary btn--full" id="open-invite-modal-2">Пригласить в проект</button>
+          <p>Want to invite ${talent.fullName.split(' ')[0]} to your project?</p>
+          <button class="btn btn--primary btn--full" id="open-invite-modal-2">Invite to a Project</button>
         </div>
       </aside>
     </div>
@@ -130,12 +130,11 @@ function renderTalentDetail(slug, basePath) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       closeModal();
-      // Show inline success
       const applyDiv = document.getElementById('invite');
       if (applyDiv) {
         applyDiv.innerHTML = `
           <div class="success-inline">
-            ✅ Приглашение отправлено! В полноценной версии специалист получит уведомление в личном кабинете.
+            ✅ Invitation sent! In the full version the specialist will receive a notification in their dashboard.
           </div>`;
       }
     });

@@ -5,7 +5,7 @@ function renderProjectDetail(slug, basePath) {
 
   const project = PROJECTS.find(p => p.slug === slug);
   if (!project) {
-    container.innerHTML = '<p class="empty-state">Проект не найден.</p>';
+    container.innerHTML = '<p class="empty-state">Project not found.</p>';
     return;
   }
 
@@ -13,7 +13,7 @@ function renderProjectDetail(slug, basePath) {
 
   container.innerHTML = `
     <nav class="breadcrumb">
-      <a href="${basePath}projects.html">← Все проекты</a>
+      <a href="${basePath}projects.html">← All Projects</a>
     </nav>
 
     <div class="detail-layout">
@@ -28,62 +28,62 @@ function renderProjectDetail(slug, basePath) {
         </div>
 
         <section class="detail-section">
-          <h2>О проекте</h2>
+          <h2>About the Project</h2>
           <p>${project.fullDescription}</p>
         </section>
 
         <section class="detail-section">
-          <h2>Проблема</h2>
+          <h2>The Problem</h2>
           <p>${project.problem}</p>
         </section>
 
         <section class="detail-section">
-          <h2>Цель проекта</h2>
+          <h2>Project Goal</h2>
           <p>${project.goal}</p>
         </section>
 
         <section class="detail-section">
-          <h2>Связь с повесткой ШОС</h2>
+          <h2>Connection to the SCO Agenda</h2>
           <p>${project.scoConnection}</p>
         </section>
 
         <section class="detail-section">
-          <h2>Ожидаемый результат</h2>
+          <h2>Expected Result</h2>
           <p>${project.expectedResult}</p>
         </section>
 
         <section class="detail-section">
-          <h2>Требуемые роли в команде</h2>
+          <h2>Required Team Roles</h2>
           <div class="roles-list">
             ${project.requiredRoles.map(r => `<div class="role-item"><span class="role-icon">👤</span> ${r}</div>`).join('')}
           </div>
         </section>
 
         <section class="detail-section">
-          <h2>Необходимые компетенции</h2>
+          <h2>Required Skills</h2>
           <div class="tags-block">${tagList(project.requiredSkills)}</div>
         </section>
 
         <div class="detail-apply">
-          <a href="${basePath}apply.html?project=${project.slug}" class="btn btn--primary btn--lg">Откликнуться на проект</a>
+          <a href="${basePath}apply.html?project=${project.slug}" class="btn btn--primary btn--lg">Apply for this Project</a>
         </div>
       </main>
 
       <aside class="detail-sidebar">
         <div class="sidebar-card">
-          <h3>Детали проекта</h3>
+          <h3>Project Details</h3>
           <dl class="detail-list">
-            <dt>Охват</dt><dd>${project.countryScope}</dd>
-            <dt>Стадия</dt><dd>${project.stage}</dd>
-            <dt>Формат</dt><dd>${project.format}</dd>
-            <dt>Дедлайн набора</dt><dd>${project.deadline}</dd>
-            <dt>Открытых мест</dt><dd>${project.openSlots}</dd>
-            <dt>Язык проекта</dt><dd>${project.language}</dd>
+            <dt>Scope</dt><dd>${project.countryScope}</dd>
+            <dt>Stage</dt><dd>${project.stage}</dd>
+            <dt>Format</dt><dd>${project.format}</dd>
+            <dt>Team deadline</dt><dd>${project.deadline}</dd>
+            <dt>Open slots</dt><dd>${project.openSlots}</dd>
+            <dt>Working language</dt><dd>${project.language}</dd>
           </dl>
         </div>
 
         <div class="sidebar-card">
-          <h3>Лидер проекта</h3>
+          <h3>Project Leader</h3>
           <div class="leader-info">
             <div class="leader-avatar">${project.leaderName.split(' ').map(w => w[0]).join('')}</div>
             <div>
@@ -94,9 +94,9 @@ function renderProjectDetail(slug, basePath) {
         </div>
 
         <div class="sidebar-card">
-          <h3>Текущая команда</h3>
+          <h3>Current Team</h3>
           ${project.teamMembers.map(m => `<div class="team-member">👤 ${m}</div>`).join('')}
-          <p class="team-note">Ищем ещё ${project.openSlots} участников</p>
+          <p class="team-note">Looking for ${project.openSlots} more members</p>
         </div>
       </aside>
     </div>

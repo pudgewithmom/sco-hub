@@ -20,10 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function render() {
     const filtered = getFiltered();
-    meta.textContent = `Найдено специалистов: ${filtered.length}`;
+    meta.textContent = `Specialists found: ${filtered.length}`;
     list.innerHTML = filtered.length
       ? filtered.map(t => buildTalentCard(t, '')).join('')
-      : '<p class="empty-state">По выбранным фильтрам специалистов не найдено.</p>';
+      : '<p class="empty-state">No specialists match the selected filters.</p>';
   }
 
   [selCountry, selSkill, selLang].forEach(el => el.addEventListener('change', render));

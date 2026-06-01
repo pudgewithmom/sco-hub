@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Откликнуться на проект — SCO Youth Talent Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">SCO Youth Talent Hub</a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="projects.html" class="nav__link">Проекты</a>
+        <a href="talents.html" class="nav__link">Специалисты</a>
+        <a href="about.html" class="nav__link">О платформе</a>
+        <a href="pilot.html" class="nav__link">Пилотный запуск</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">&#9776;</button>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Отклик на проект</h1>
+      <p class="page-header__sub" id="apply-project-name">Загрузка...</p>
+    </div>
+  </div>
+
+  <div class="container form-page">
+    <div class="form-card">
+      <p class="form-demo-note">
+        ⚠️ Это демонстрационный сценарий. В полноценной версии отклики будут отображаться в личном кабинете лидера проекта.
+      </p>
+
+      <form id="apply-form" class="form" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="name">Имя и фамилия *</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Алина Каримова" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email *</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="example@mail.com" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="telegram">Telegram</label>
+          <input class="form-input" type="text" id="telegram" name="telegram" placeholder="@username" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="role">Роль, на которую претендуете *</label>
+          <select class="form-input" id="role" name="role" required>
+            <option value="">Выберите роль</option>
+            <option value="Аналитик">Аналитик</option>
+            <option value="Юрист-международник">Юрист-международник</option>
+            <option value="Переводчик">Переводчик</option>
+            <option value="IT-разработчик">IT-разработчик</option>
+            <option value="Дизайнер">Дизайнер</option>
+            <option value="Медиаспециалист">Медиаспециалист</option>
+            <option value="Проектный координатор">Проектный координатор</option>
+            <option value="Исследователь">Исследователь</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">Мотивационное сообщение *</label>
+          <textarea class="form-input form-textarea" id="message" name="message" rows="4"
+            placeholder="Расскажите, почему вас интересует этот проект и что вы можете привнести в команду" required></textarea>
+        </div>
+
+        <div class="form-group form-group--check">
+          <input type="checkbox" id="consent" name="consent" required />
+          <label for="consent">Я согласен(а) на обработку персональных данных в рамках демонстрационного прототипа</label>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg btn--full">Отправить отклик</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo">SCO Youth Talent Hub</span>
+      <p class="footer__note">Демонстрационный прототип. Данные являются тестовыми.</p>
+    </div>
+  </footer>
+
+  <script src="data/projects.js"></script>
+  <script src="js/apply.js"></script>
+</body>
+</html>

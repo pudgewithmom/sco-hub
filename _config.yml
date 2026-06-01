@@ -1,0 +1,4 @@
+# GitHub Pages config
+# No Jekyll processing needed — pure static HTML
+exclude:
+  - README.md

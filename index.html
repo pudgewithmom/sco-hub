@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCO Youth Talent Hub</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">SCO Youth Talent Hub</a>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Главная</a>
+        <a href="projects.html" class="nav__link">Проекты</a>
+        <a href="talents.html" class="nav__link">Специалисты</a>
+        <a href="about.html" class="nav__link">О платформе</a>
+        <a href="pilot.html" class="nav__link">Пилотный запуск</a>
+      </nav>
+      <div class="header__actions">
+        <a href="pilot.html" class="btn btn--outline">Разместить проект</a>
+        <a href="pilot.html" class="btn btn--primary">Создать профиль</a>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <h1 class="hero__title">Платформа для проектных команд и карьерных возможностей ШОС</h1>
+        <p class="hero__subtitle">Соединяем молодых специалистов с лидерами международных инициатив. Найди проект — или собери команду.</p>
+        <div class="hero__btns">
+          <a href="projects.html" class="btn btn--primary btn--lg">Найти проект</a>
+          <a href="talents.html" class="btn btn--outline btn--lg">Найти специалиста</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__badge">6 специалистов</div>
+        <div class="hero__badge">4 проекта</div>
+        <div class="hero__badge">5 стран</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Как это работает</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <h3 class="step__title">Создай профиль</h3>
+          <p class="step__text">Укажи компетенции, языки, опыт участия в программах ШОС и желаемую роль в проекте.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <h3 class="step__title">Найди проект</h3>
+          <p class="step__text">Просматривай каталог инициатив, фильтруй по сфере, стране и требуемым ролям.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <h3 class="step__title">Откликнись</h3>
+          <p class="step__text">Отправь отклик с мотивационным сообщением — лидер проекта получит уведомление.</p>
+        </div>
+        <div class="step">
+          <div class="step__num">4</div>
+          <h3 class="step__title">Войди в команду</h3>
+          <p class="step__text">Лидер проекта формирует команду и вместе вы подаёте заявку на грант или конкурс.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured projects -->
+  <section class="section section--gray">
+    <div class="container">
+      <h2 class="section__title">Актуальные проекты</h2>
+      <div class="cards" id="featured-projects"><!-- JS --></div>
+      <div class="section__more">
+        <a href="projects.html" class="btn btn--outline">Все проекты</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured talents -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Специалисты платформы</h2>
+      <div class="cards" id="featured-talents"><!-- JS --></div>
+      <div class="section__more">
+        <a href="talents.html" class="btn btn--outline">Все специалисты</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="section section--dark">
+    <div class="container">
+      <h2 class="section__title section__title--light">Почему SCO Youth Talent Hub</h2>
+      <div class="benefits">
+        <div class="benefit">
+          <div class="benefit__icon">🌐</div>
+          <h3>Международная среда</h3>
+          <p>Специалисты и проекты из всех стран-участниц ШОС.</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">🎯</div>
+          <h3>Фокус на проектах</h3>
+          <p>Не просто резюме — реальные инициативы с дедлайнами и ролями.</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">🤝</div>
+          <h3>Прямая связь</h3>
+          <p>Специалист и лидер проекта находят друг друга без посредников.</p>
+        </div>
+        <div class="benefit">
+          <div class="benefit__icon">🏆</div>
+          <h3>Гранты и конкурсы</h3>
+          <p>Проекты ориентированы на реальные грантовые программы и конкурсы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container cta__inner">
+      <h2 class="cta__title">Хочешь участвовать в пилотном запуске?</h2>
+      <p class="cta__text">Оставь контакт — мы свяжемся с тобой при запуске полноценной версии платформы.</p>
+      <a href="pilot.html" class="btn btn--primary btn--lg">Участвовать в пилоте</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo">SCO Youth Talent Hub</span>
+      <p class="footer__note">Демонстрационный прототип. Данные являются тестовыми.</p>
+    </div>
+  </footer>
+
+  <script src="data/projects.js"></script>
+  <script src="data/talents.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

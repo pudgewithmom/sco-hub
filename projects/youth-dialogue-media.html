@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youth Dialogue Media — SCO Youth Talent Hub</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="logo">SCO Youth Talent Hub</a>
+      <nav class="nav" id="nav">
+        <a href="../index.html" class="nav__link">Главная</a>
+        <a href="../projects.html" class="nav__link nav__link--active">Проекты</a>
+        <a href="../talents.html" class="nav__link">Специалисты</a>
+        <a href="../about.html" class="nav__link">О платформе</a>
+        <a href="../pilot.html" class="nav__link">Пилотный запуск</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">&#9776;</button>
+    </div>
+  </header>
+
+  <div class="container project-page" id="project-detail"><!-- JS --></div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo">SCO Youth Talent Hub</span>
+      <p class="footer__note">Демонстрационный прототип. Данные являются тестовыми.</p>
+    </div>
+  </footer>
+
+  <script src="../data/projects.js"></script>
+  <script src="../data/talents.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/project-detail.js"></script>
+  <script>
+    renderProjectDetail('youth-dialogue-media', '../');
+  </script>
+</body>
+</html>

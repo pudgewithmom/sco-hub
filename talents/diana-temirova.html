@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Диана Темирова — SCO Youth Talent Hub</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="header"><div class="container header__inner">
+    <a href="../index.html" class="logo">SCO Youth Talent Hub</a>
+    <nav class="nav" id="nav">
+      <a href="../index.html" class="nav__link">Главная</a>
+      <a href="../projects.html" class="nav__link">Проекты</a>
+      <a href="../talents.html" class="nav__link nav__link--active">Специалисты</a>
+      <a href="../about.html" class="nav__link">О платформе</a>
+      <a href="../pilot.html" class="nav__link">Пилотный запуск</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню">&#9776;</button>
+  </div></header>
+  <div class="container talent-page" id="talent-detail"></div>
+  <div class="modal" id="invite-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__box">
+      <button class="modal__close" id="modal-close" aria-label="Закрыть">✕</button>
+      <h2 class="modal__title" id="modal-title">Пригласить в проект</h2>
+      <p class="modal__note">Это демонстрационный сценарий.</p>
+      <form id="invite-form" class="form" novalidate>
+        <div class="form-group"><label class="form-label" for="inv-name">Ваше имя *</label><input class="form-input" type="text" id="inv-name" required /></div>
+        <div class="form-group"><label class="form-label" for="inv-project">Проект *</label>
+          <select class="form-input" id="inv-project" required>
+            <option value="">Выберите проект</option>
+            <option>SCO Legal Youth Lab</option><option>Digital Career Map for SCO Youth</option>
+            <option>SCO Student Grant Navigator</option><option>Youth Dialogue Media Platform</option>
+          </select></div>
+        <div class="form-group"><label class="form-label" for="inv-msg">Сообщение *</label><textarea class="form-input form-textarea" id="inv-msg" rows="3" required></textarea></div>
+        <button type="submit" class="btn btn--primary btn--full">Отправить приглашение</button>
+      </form>
+    </div>
+  </div>
+  <footer class="footer"><div class="container footer__inner"><span class="logo">SCO Youth Talent Hub</span><p class="footer__note">Демонстрационный прототип.</p></div></footer>
+  <script src="../data/talents.js"></script>
+  <script src="../js/components.js"></script>
+  <script src="../js/talent-detail.js"></script>
+  <script>renderTalentDetail('diana-temirova', '../');</script>
+</body>
+</html>

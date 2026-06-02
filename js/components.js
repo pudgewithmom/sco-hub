@@ -58,7 +58,7 @@ function buildTalentCard(t, basePath) {
       </div>
       <p class="card__spec">${t.specialization}</p>
       <div class="card__tags">${tagList(t.skills.slice(0, 3))}</div>
-      <div class="card__langs">🗣 ${t.languages.slice(0, 2).join(' · ')}</div>
+      <div class="card__langs">🗣 ${t.languages.join(' · ')}</div>
       <div class="card__actions">
         <a href="${basePath}talents/${t.slug}.html" class="btn btn--outline btn--sm">View Profile</a>
         <a href="${basePath}talents/${t.slug}.html#invite" class="btn btn--primary btn--sm">Invite</a>

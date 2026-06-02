@@ -83,8 +83,20 @@ function renderTalentDetail(slug, basePath) {
           ${avatarHtml}
           <div class="talent-header__info">
             <h1 class="detail-title">${talent.fullName}</h1>
-            <p class="talent-location">📍 ${talent.city}, ${talent.country}</p>
-            <p class="talent-spec">${talent.specialization}</p>
+            <dl class="profile-meta">
+              <div class="profile-meta__row">
+                <dt>Country</dt>
+                <dd>${talent.country}</dd>
+              </div>
+              <div class="profile-meta__row">
+                <dt>Specialization</dt>
+                <dd>${talent.specialization}</dd>
+              </div>
+              <div class="profile-meta__row">
+                <dt>Languages</dt>
+                <dd>${talent.languages.join(', ')}</dd>
+              </div>
+            </dl>
             <span class="badge badge--green">Available for projects</span>
           </div>
         </div>

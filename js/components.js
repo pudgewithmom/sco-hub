@@ -44,10 +44,13 @@ function buildProjectCard(p, basePath) {
 
 function buildTalentCard(t, basePath) {
   basePath = basePath || '';
+  const avatarHtml = t.photo
+    ? `<img src="${basePath}${t.photo}" alt="${t.fullName}" class="card__avatar card__avatar--photo" />`
+    : `<div class="card__avatar">${t.fullName.split(' ').map(w => w[0]).join('')}</div>`;
   return `
     <article class="card">
       <div class="card__header">
-        <div class="card__avatar">${t.fullName.split(' ').map(w => w[0]).join('')}</div>
+        ${avatarHtml}
         <div>
           <h3 class="card__title"><a href="${basePath}talents/${t.slug}.html">${t.fullName}</a></h3>
           <span class="card__sub">${t.country}, ${t.city}</span>

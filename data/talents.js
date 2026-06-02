@@ -95,5 +95,64 @@ const TALENTS = [
     projectInterest: 'Interested in international investment and trade law, commercial arbitration and mediation, Belt and Road legal cooperation, and cultural/educational exchange between China, Iran, and SCO member states.',
     availability: 'Online — open to SCO and BRI legal research and cooperation projects',
     format: 'online'
+  },
+  {
+    id: 'tatiana-solonkina',
+    slug: 'tatiana-solonkina',
+    fullName: 'Tatiana Solonkina',
+    country: 'Russia',
+    city: 'Shanghai',
+    photo: 'public/avatars/tatiana-solonkina.jpg',
+    specialization: 'Russia–China Business Law · Corporate Law · Cross-Border Transactions · International Commercial Arbitration',
+    shortBio: 'Russia-qualified lawyer with 5 years of commercial legal practice, currently based in Shanghai. Specialises in Russia–China cross-border transactions, corporate law, and business insolvency. Drafts and negotiates contracts in Russian, English, and Chinese, with deep understanding of Chinese business culture, legal institutions, and the SCO regulatory framework.',
+    education: [
+      { institution: 'Siberian Federal University, Law Institute', degree: 'Bachelor of Law (LL.B.) — Comparative Jurisprudence (International & Foreign Law), Graduated 2021, Distinction' },
+      { institution: 'Siberian Federal University, Law Institute', degree: 'Master of Law (LL.M.) — Corporate Law, Graduated 2023, Distinction' }
+    ],
+    additionalEducation: [
+      'Professional Retraining — Legal Translator, English/Russian (1,500 hours)',
+      'Professional Retraining — IT Project Management Specialist (256 hours)',
+      'Advanced Bankruptcy Law Course — Lemchik, Krupsky & Partners / MGU',
+      'ATOLES Legal English C1 (254/300)',
+      'Chinese HSK 3'
+    ],
+    experience: [
+      { org: 'PRODELAW Engineering LLC, Russia', role: 'Chief Legal Counsel (Head Lawyer)', period: 'September 2021 – Present' },
+      { org: 'PRODELAW Engineering LLC, Russia', role: 'Lawyer', period: '2019 – 2021' },
+      { org: 'SFU Legal Clinic, Siberian Federal University', role: 'Volunteer Legal Advisor', period: 'September 2019 – May 2021' }
+    ],
+    programs: ['SCO/SHUPL/CNISCO Research and Study Programmes (Shanghai)'],
+    skills: ['Russia–China cross-border transactions', 'corporate law', 'contract drafting & negotiation', 'due diligence', 'business insolvency', 'international commercial arbitration', 'legal translation'],
+    languages: ['Russian (native)', 'English (C1)', 'Chinese (HSK 3)'],
+    desiredRoles: ['Legal Counsel', 'Cross-Border Transactions Specialist', 'Corporate Lawyer', 'Arbitration Specialist'],
+    projectInterest: 'I want to provide legal support for Russia–China cross-border investment and trade projects. I can offer full legal assistance — from contract drafting and negotiation, corporate structuring, and due diligence to cross-border insolvency advisory and dispute resolution — within the jurisdictions of Russia, China, and SCO member states.',
+    availability: 'Online — based in Shanghai, open to international SCO project teams',
+    format: 'online'
+  },
+  {
+    id: 'yang-jinrui',
+    slug: 'yang-jinrui',
+    fullName: 'Yang Jinrui',
+    country: 'China',
+    city: 'Lanzhou',
+    photo: 'public/avatars/yang-jinrui.jpg',
+    specialization: 'English Translation & Cross-Cultural Communication',
+    shortBio: 'Motivated to build bridges between languages and cultures through high-quality translation and cross-cultural communication, promoting mutual understanding and cooperation within the SCO, the Belt and Road Initiative, and other international exchange platforms.',
+    education: [
+      { institution: 'Gansu University of Political Science and Law', degree: 'Literature (2 years)' },
+      { institution: 'Lanzhou Petrochemical Polytechnic', degree: 'Business English (3 years)' }
+    ],
+    additionalEducation: ['Graduate of the SCO "Shanghe Youth" professional development and personnel training program'],
+    experience: [
+      { org: 'New East Education Company', role: 'Interpreter', period: '2023 – 2026' },
+      { org: 'DQ', role: 'Part-time Seller', period: '2024 – 2026' }
+    ],
+    programs: ['SCO "Shanghe Youth" Professional Development and Personnel Training Program'],
+    skills: ['English translation', 'interpretation', 'cross-cultural communication', 'business English', 'SCO cooperation'],
+    languages: ['Chinese (native)', 'English (proficient)'],
+    desiredRoles: ['Translator', 'Interpreter', 'Communications Coordinator', 'Cross-Cultural Liaison'],
+    projectInterest: 'I would like to contribute to projects requiring translation, interpretation, and cross-cultural communication support within the SCO and BRI framework.',
+    availability: 'Online — open to international SCO project teams',
+    format: 'online'
   }
 ];

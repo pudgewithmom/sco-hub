@@ -55,7 +55,14 @@ function renderProjectDetail(slug, basePath) {
         <section class="detail-section">
           <h2>Required Team Roles</h2>
           <div class="roles-list">
-            ${project.requiredRoles.map(r => `<div class="role-item"><span class="role-icon">👤</span> ${r}</div>`).join('')}
+            ${project.requiredRolesDetail
+              ? project.requiredRolesDetail.map(r => `
+                  <div class="role-item role-item--detailed">
+                    <div class="role-item__header"><span class="role-icon">👤</span> <strong>${r.role}</strong></div>
+                    <p class="role-item__desc">${r.description}</p>
+                  </div>`).join('')
+              : project.requiredRoles.map(r => `<div class="role-item"><span class="role-icon">👤</span> ${r}</div>`).join('')
+            }
           </div>
         </section>
 

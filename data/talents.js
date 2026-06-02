@@ -21,7 +21,7 @@ const TALENTS = [
     ],
     programs: ['SCO "Shanghe Youth" Professional Development and Personnel Training Program'],
     skills: ['international law', 'corporate law', 'deal structuring', 'regulatory compliance', 'internal audit'],
-    languages: ['Russian (native)', 'Chinese (proficient)', 'English (proficient)'],
+    languages: ['Russian (native)', 'Tatar (native)', 'Chinese (proficient)', 'English (proficient)'],
     desiredRoles: ['International Lawyer', 'Legal Advisor', 'Legal Counsel'],
     projectInterest: 'I want to provide legal support for international investment projects. I can offer full legal assistance to any startup — from deal structuring to interaction with regulatory authorities within the jurisdictions of Russia, China, and SCO member states.',
     availability: 'Online — open to international SCO project teams',
